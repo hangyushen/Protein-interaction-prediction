@@ -1,0 +1,2 @@
+data_test<-read.transactions("C:/Users/lenovo/Desktop/test/12.10.csv",format =c("basket", "single"), sep = ",",cols = NULL, rm.duplicates =TRUE)
+rules <- apriori(data,parameter = list(supp=0.008,conf=0.6,target="rules",maxlen=2))
